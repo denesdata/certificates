@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>székelydata — Tanúsítvány</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a365d'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' fill='%23d69e2e' font-size='18' font-weight='bold' font-family='serif'%3ES%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/certificate.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="toolbar no-print">
+        <div class="toolbar-left">
+            <a href="/" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+                <span data-i18n="backToVerify">Vissza</span>
+            </a>
+        </div>
+        <div class="toolbar-right">
+            <nav class="lang-switcher" aria-label="Language">
+                <button class="lang-btn active" data-lang="hu" aria-label="Magyar">HU</button>
+                <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                <button class="lang-btn" data-lang="ro" aria-label="Română">RO</button>
+            </nav>
+            <button class="print-btn" onclick="window.print()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                <span data-i18n="printBtn">Nyomtatás</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="certificate-wrapper" class="certificate-wrapper">
+        <div id="certificate" class="certificate">
+            <div class="cert-border">
+                <div class="cert-inner">
+                    <div class="cert-header">
+                        <div class="cert-logo">
+                            <span class="cert-logo-mark">S</span>
+                            <span class="cert-logo-text">székelydata</span>
+                        </div>
+                    </div>
+
+                    <h1 class="cert-title" data-i18n="certTitle">Tanúsítvány</h1>
+
+                    <p class="cert-body-text" data-i18n="certBody">Igazoljuk, hogy</p>
+
+                    <div class="cert-participant">
+                        <span id="cert-name" class="cert-name"></span>
+                        <div class="cert-name-line"></div>
+                    </div>
+
+                    <p class="cert-body-text" data-i18n="certCourseIntro">sikeresen elvégezte a következő kurzust:</p>
+
+                    <h2 class="cert-course" id="cert-course"></h2>
+
+                    <div class="cert-details">
+                        <div class="cert-detail">
+                            <span class="cert-detail-label" data-i18n="certLocationLabel">Helyszín</span>
+                            <span class="cert-detail-value" id="cert-location"></span>
+                        </div>
+                        <div class="cert-detail">
+                            <span class="cert-detail-label" data-i18n="certDateLabel">Dátum</span>
+                            <span class="cert-detail-value" id="cert-date"></span>
+                        </div>
+                    </div>
+
+                    <div class="cert-footer">
+                        <div class="cert-signature">
+                            <div class="cert-sig-line"></div>
+                            <span class="cert-sig-name" id="cert-instructor"></span>
+                            <span class="cert-sig-role" data-i18n="certInstructorRole">Oktató</span>
+                        </div>
+                        <div class="cert-qr">
+                            <div id="cert-qrcode"></div>
+                            <span class="cert-id-label" id="cert-id-display"></span>
+                        </div>
+                    </div>
+
+                    <div class="cert-company">
+                        <span data-i18n="certIssuedBy">Kiállította:</span>
+                        <span id="cert-company-name"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cert-not-found" class="cert-not-found hidden">
+        <div class="not-found-card">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#e53e3e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M15 9l-6 6M9 9l6 6"/>
+            </svg>
+            <h2 data-i18n="invalidTitle">Tanúsítvány nem található</h2>
+            <p data-i18n="invalidMessage">Nem található tanúsítvány ezzel az azonosítóval.</p>
+            <a href="/" class="back-btn" data-i18n="backToVerify">Vissza</a>
+        </div>
+    </div>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/certificate-app.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>székelydata — Tanúsítvány</title>
+    <meta name="description" content="Verify the authenticity of certificates issued by székelydata / székelydata tanúsítványok ellenőrzése">
+    <meta property="og:title" content="székelydata — Certificate Verification">
+    <meta property="og:description" content="Verify the authenticity of székelydata course certificates">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a365d'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' fill='%23d69e2e' font-size='18' font-weight='bold' font-family='serif'%3ES%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <span class="logo-mark">S</span>
+                <div class="logo-text">
+                    <span class="logo-brand">székelydata</span>
+                    <span class="logo-tagline" data-i18n="siteSubtitle">Tanúsítvány ellenőrzés</span>
+                </div>
+            </a>
+            <nav class="lang-switcher" aria-label="Language">
+                <button class="lang-btn active" data-lang="hu" aria-label="Magyar">HU</button>
+                <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                <button class="lang-btn" data-lang="ro" aria-label="Română">RO</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-icon">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="M9 12l2 2 4-4"/>
+                    </svg>
+                </div>
+                <h1 data-i18n="heroTitle">Tanúsítvány ellenőrzés</h1>
+                <p class="hero-sub" data-i18n="heroSubtitle">Ellenőrizze a székelydata által kiállított tanúsítványok hitelességét</p>
+            </div>
+        </section>
+
+        <section class="verify-section">
+            <div class="container">
+                <div class="verify-card">
+                    <form id="verify-form" class="verify-form" autocomplete="off">
+                        <div class="input-group">
+                            <input
+                                type="text"
+                                id="cert-id"
+                                class="cert-input"
+                                data-i18n-placeholder="inputPlaceholder"
+                                placeholder="Adja meg a tanúsítvány azonosítóját (pl. SD-2026-0001)"
+                                spellcheck="false"
+                                required
+                            >
+                            <button type="submit" id="verify-btn" class="verify-btn" data-i18n="verifyButton">
+                                Ellenőrzés
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="result" class="result hidden" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 <span data-i18n="footerCompany">Csala Dénes PFA</span>. <span data-i18n="footerRights">Minden jog fenntartva.</span></p>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
