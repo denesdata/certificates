@@ -4,3 +4,5 @@ node_modules/
 .env
 .netlify/
 test-results/
+node_modules/
+package*.json

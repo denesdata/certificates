@@ -68,7 +68,7 @@
                     </div>
                     <div class="result-row">
                         <span class="result-label">${t('labelParticipant', lang)}</span>
-                        <span class="result-value">${esc(cert.participant)}</span>
+                        <span class="result-value">${esc(typeof cert.participant === 'object' ? (cert.participant[lang] || cert.participant.hu) : cert.participant)}</span>
                     </div>
                     <div class="result-row">
                         <span class="result-label">${t('labelCourse', lang)}</span>
@@ -84,11 +84,15 @@
                     </div>
                     <div class="result-row">
                         <span class="result-label">${t('labelInstructor', lang)}</span>
-                        <span class="result-value">${esc(cert.instructor)}</span>
+                        <span class="result-value">${esc(typeof cert.instructor === 'object' ? (cert.instructor[lang] || cert.instructor.hu) : cert.instructor)}</span>
                     </div>
+                    ${cert.issuedDate ? `<div class="result-row">
+                        <span class="result-label">${t('labelIssuedDate', lang)}</span>
+                        <span class="result-value">${formatDate(cert.issuedDate, lang)}</span>
+                    </div>` : ''}
                     <div class="result-row">
                         <span class="result-label">${t('labelIssuedBy', lang)}</span>
-                        <span class="result-value">${esc(cert.issuer.brand)} — ${esc(cert.issuer.company)}</span>
+                        <span class="result-value">${esc(cert.issuer.brand)} — ${esc(cert.issuer.company)}${cert.issuer.cui ? ' (CUI: ' + esc(cert.issuer.cui) + ')' : ''}</span>
                     </div>
                 </div>
                 <div class="result-actions">

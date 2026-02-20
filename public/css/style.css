@@ -77,18 +77,11 @@ body {
     color: inherit;
 }
 
-.logo-mark {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: var(--accent);
-    color: var(--primary);
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 1.4rem;
-    border-radius: 8px;
+.logo-img {
+    height: 38px;
+    width: auto;
+    border-radius: 5px;
+    display: block;
 }
 
 .logo-text {

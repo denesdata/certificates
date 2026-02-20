@@ -153,9 +153,23 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 2.5rem 3.5rem;
+    padding: 2rem 3.5rem 1.2rem;
     text-align: center;
+}
+
+.cert-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* ── Certificate Header ─────────────────────────── */
@@ -171,24 +185,17 @@ body {
     justify-content: center;
 }
 
-.cert-logo-mark {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    background: var(--primary);
-    color: var(--accent);
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 1.25rem;
-    border-radius: 7px;
+.cert-logo-img {
+    height: 48px;
+    width: auto;
+    border-radius: 6px;
+    display: block;
 }
 
 .cert-logo-text {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: var(--primary);
     letter-spacing: -0.01em;
 }
@@ -241,7 +248,7 @@ body {
     font-style: italic;
     color: var(--primary);
     margin: 0.6rem 0 0.8rem;
-    max-width: 80%;
+    white-space: nowrap;
 }
 
 /* ── Certificate Details ────────────────────────── */
@@ -280,8 +287,8 @@ body {
     justify-content: space-between;
     width: 100%;
     max-width: 540px;
-    margin-top: auto;
     padding-top: 0.8rem;
+    padding-bottom: 1.2rem;
 }
 
 .cert-signature {
@@ -289,6 +296,14 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 0.2rem;
+}
+
+.cert-sig-img {
+    display: block;
+    height: 60px;
+    width: auto;
+    margin: 0 auto 0.15rem;
+    object-fit: contain;
 }
 
 .cert-sig-line {
@@ -394,22 +409,56 @@ body {
         display: none !important;
     }
 
-    body {
-        background: white;
+    html, body {
+        width: 297mm;
+        height: 210mm;
         margin: 0;
         padding: 0;
+        background: white;
+        overflow: hidden;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 
     .certificate-wrapper {
         padding: 0;
+        margin: 0;
         min-height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 297mm;
+        height: 210mm;
     }
 
     .certificate {
-        width: 100%;
+        width: 297mm;
+        height: 210mm;
+        max-width: none;
         box-shadow: none;
         aspect-ratio: auto;
         page-break-inside: avoid;
+        margin: 0;
+    }
+
+    .cert-border {
+        inset: 6mm;
+    }
+
+    .cert-inner {
+        padding: 5mm 10mm 3mm;
+    }
+
+    .cert-logo-img {
+        height: 36px;
+    }
+
+    .cert-sig-img {
+        height: 45px;
+    }
+
+    .cert-not-found {
+        display: none !important;
     }
 
     @page {

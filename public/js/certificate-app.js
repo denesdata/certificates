@@ -27,14 +27,21 @@
     }
 
     function fillCertificate(lang) {
-        document.getElementById('cert-name').textContent = cert.participant;
+        var participant = typeof cert.participant === 'object'
+            ? (cert.participant[lang] || cert.participant.hu) : cert.participant;
+        document.getElementById('cert-name').textContent = participant;
         document.getElementById('cert-course').textContent = cert.course[lang] || cert.course.hu;
         document.getElementById('cert-location').textContent = cert.location[lang] || cert.location.hu;
         document.getElementById('cert-date').textContent = formatDate(cert.date, lang);
-        document.getElementById('cert-instructor').textContent = cert.instructor;
+        document.getElementById('cert-issued-date').textContent =
+            cert.issuedDate ? formatDate(cert.issuedDate, lang) : '';
+        var instructor = typeof cert.instructor === 'object'
+            ? (cert.instructor[lang] || cert.instructor.hu) : cert.instructor;
+        document.getElementById('cert-instructor').textContent = instructor;
         document.getElementById('cert-id-display').textContent = cert.id;
-        document.getElementById('cert-company-name').textContent =
-            cert.issuer.brand + ' — ' + cert.issuer.company;
+        var companyText = cert.issuer.brand + ' — ' + cert.issuer.company;
+        if (cert.issuer.cui) companyText += ' (CUI: ' + cert.issuer.cui + ')';
+        document.getElementById('cert-company-name').textContent = companyText;
 
         document.title = 'székelydata — ' + t('certTitle', lang) + ' — ' + cert.participant;
 

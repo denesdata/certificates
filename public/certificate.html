@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>székelydata — Tanúsítvány</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a365d'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' fill='%23d69e2e' font-size='18' font-weight='bold' font-family='serif'%3ES%3C/text%3E%3C/svg%3E">
+    <link rel="icon" href="img/clogo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -38,50 +38,55 @@
                 <div class="cert-inner">
                     <div class="cert-header">
                         <div class="cert-logo">
-                            <span class="cert-logo-mark">S</span>
+                            <img src="img/clogo.png" alt="székelydata" class="cert-logo-img">
                             <span class="cert-logo-text">székelydata</span>
                         </div>
                     </div>
 
-                    <h1 class="cert-title" data-i18n="certTitle">Tanúsítvány</h1>
+                    <div class="cert-content">
+                        <h1 class="cert-title" data-i18n="certTitle">Teljesítési oklevél</h1>
 
-                    <p class="cert-body-text" data-i18n="certBody">Igazoljuk, hogy</p>
+                        <p class="cert-body-text" data-i18n="certBody">Igazoljuk, hogy</p>
 
-                    <div class="cert-participant">
-                        <span id="cert-name" class="cert-name"></span>
-                        <div class="cert-name-line"></div>
-                    </div>
-
-                    <p class="cert-body-text" data-i18n="certCourseIntro">sikeresen elvégezte a következő kurzust:</p>
-
-                    <h2 class="cert-course" id="cert-course"></h2>
-
-                    <div class="cert-details">
-                        <div class="cert-detail">
-                            <span class="cert-detail-label" data-i18n="certLocationLabel">Helyszín</span>
-                            <span class="cert-detail-value" id="cert-location"></span>
+                        <div class="cert-participant">
+                            <span id="cert-name" class="cert-name"></span>
+                            <div class="cert-name-line"></div>
                         </div>
-                        <div class="cert-detail">
-                            <span class="cert-detail-label" data-i18n="certDateLabel">Dátum</span>
-                            <span class="cert-detail-value" id="cert-date"></span>
-                        </div>
-                    </div>
 
-                    <div class="cert-footer">
-                        <div class="cert-signature">
-                            <div class="cert-sig-line"></div>
-                            <span class="cert-sig-name" id="cert-instructor"></span>
-                            <span class="cert-sig-role" data-i18n="certInstructorRole">Oktató</span>
-                        </div>
-                        <div class="cert-qr">
-                            <div id="cert-qrcode"></div>
-                            <span class="cert-id-label" id="cert-id-display"></span>
+                        <p class="cert-body-text" data-i18n="certCourseIntro">sikeresen elvégezte a következő kurzust:</p>
+
+                        <h2 class="cert-course" id="cert-course"></h2>
+
+                        <div class="cert-details">
+                            <div class="cert-detail">
+                                <span class="cert-detail-label" data-i18n="certLocationLabel">Helyszín</span>
+                                <span class="cert-detail-value" id="cert-location"></span>
+                            </div>
+                            <div class="cert-detail">
+                                <span class="cert-detail-label" data-i18n="certDateLabel">Dátum</span>
+                                <span class="cert-detail-value" id="cert-date"></span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="cert-company">
-                        <span data-i18n="certIssuedBy">Kiállította:</span>
-                        <span id="cert-company-name"></span>
+                    <div class="cert-bottom">
+                        <div class="cert-footer">
+                            <div class="cert-signature">
+                                <img src="img/signature.png" alt="Signature" class="cert-sig-img">
+                                <div class="cert-sig-line"></div>
+                                <span class="cert-sig-name" id="cert-instructor"></span>
+                                <span class="cert-sig-role" data-i18n="certInstructorRole">Vezető adattudós</span>
+                            </div>
+                            <div class="cert-qr">
+                                <div id="cert-qrcode"></div>
+                                <span class="cert-id-label" id="cert-id-display"></span>
+                            </div>
+                        </div>
+
+                        <div class="cert-company">
+                            <span data-i18n="certIssuedBy">Kiállította:</span>
+                            <span id="cert-company-name"></span>, <span id="cert-issued-date"></span>
+                        </div>
                     </div>
                 </div>
             </div>
