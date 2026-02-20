@@ -52,7 +52,8 @@
         const container = document.getElementById('cert-qrcode');
         container.innerHTML = '';
 
-        const verifyUrl = window.location.origin + '/?id=' + encodeURIComponent(cert.id);
+        const baseUrl = 'https://cert.csaladen.es';
+        const verifyUrl = baseUrl + '/?id=' + encodeURIComponent(cert.id);
 
         if (typeof qrcode === 'undefined') return;
 
