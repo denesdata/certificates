@@ -84,7 +84,7 @@ const TRANSLATIONS = {
         footerCompany: 'Csala Dénes PFA',
         footerRights: 'Toate drepturile rezervate.',
 
-        certTitle: 'Certificat de finalizare',
+        certTitle: 'Certificat de completare',
         certBody: 'Se certifică faptul că',
         certCourseIntro: 'a absolvit cu succes cursul:',
         certDateLabel: 'Data',
