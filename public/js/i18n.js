@@ -29,6 +29,7 @@ const TRANSLATIONS = {
         certIssuedDateLabel: 'Kiállítás dátuma',
         certIssuedBy: 'Kiállította:',
         backToVerify: 'Vissza',
+        saveBtn: 'Mentés PDF-be',
         printBtn: 'Nyomtatás',
     },
     en: {
@@ -61,6 +62,7 @@ const TRANSLATIONS = {
         certIssuedDateLabel: 'Issued on',
         certIssuedBy: 'Issued by:',
         backToVerify: 'Back',
+        saveBtn: 'Save as PDF',
         printBtn: 'Print',
     },
     ro: {
@@ -93,6 +95,7 @@ const TRANSLATIONS = {
         certIssuedDateLabel: 'Data emiterii',
         certIssuedBy: 'Emis de:',
         backToVerify: 'Înapoi',
+        saveBtn: 'Salvare PDF',
         printBtn: 'Tipărire',
     }
 };

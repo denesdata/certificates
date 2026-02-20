@@ -86,13 +86,12 @@ body {
     color: #fff;
 }
 
+.save-btn,
 .print-btn {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
     padding: 0.45rem 1rem;
-    background: var(--accent);
-    color: var(--primary);
     border: none;
     border-radius: 6px;
     font-family: 'Inter', sans-serif;
@@ -102,8 +101,23 @@ body {
     transition: background 200ms;
 }
 
-.print-btn:hover {
+.save-btn {
+    background: var(--accent);
+    color: var(--primary);
+}
+
+.save-btn:hover {
     background: var(--accent-light);
+}
+
+.print-btn {
+    background: rgba(255,255,255,.15);
+    color: rgba(255,255,255,.85);
+}
+
+.print-btn:hover {
+    background: rgba(255,255,255,.25);
+    color: #fff;
 }
 
 /* ── Certificate Wrapper ────────────────────────── */
@@ -405,17 +419,29 @@ body {
 /* ── Print Styles ───────────────────────────────── */
 
 @media print {
-    .no-print {
+    .no-print,
+    .cert-not-found {
         display: none !important;
     }
 
-    html, body {
+    * {
+        overflow: visible !important;
+    }
+
+    html {
+        width: 297mm;
+        height: 210mm;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    body {
         width: 297mm;
         height: 210mm;
         margin: 0;
         padding: 0;
         background: white;
-        overflow: hidden;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
@@ -423,22 +449,23 @@ body {
     .certificate-wrapper {
         padding: 0;
         margin: 0;
-        min-height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 297mm;
         height: 210mm;
+        min-height: 0;
+        max-height: 210mm;
+        display: block;
+        overflow: hidden;
     }
 
     .certificate {
         width: 297mm;
         height: 210mm;
         max-width: none;
+        max-height: 210mm;
         box-shadow: none;
         aspect-ratio: auto;
-        page-break-inside: avoid;
         margin: 0;
+        page-break-after: avoid;
     }
 
     .cert-border {
@@ -446,7 +473,7 @@ body {
     }
 
     .cert-inner {
-        padding: 5mm 10mm 3mm;
+        padding: 4mm 10mm 3mm;
     }
 
     .cert-logo-img {
@@ -455,10 +482,6 @@ body {
 
     .cert-sig-img {
         height: 45px;
-    }
-
-    .cert-not-found {
-        display: none !important;
     }
 
     @page {
