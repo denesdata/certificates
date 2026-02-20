@@ -63,4 +63,22 @@
 
         container.innerHTML = qr.createSvgTag(3, 0);
     }
+
+    var saveBtn = document.getElementById('save-pdf-btn');
+    if (saveBtn) {
+        saveBtn.addEventListener('click', function () {
+            var el = document.getElementById('certificate');
+            var participant = typeof cert.participant === 'object'
+                ? (cert.participant[currentLang] || cert.participant.hu) : cert.participant;
+            var filename = cert.id + ' — ' + participant + '.pdf';
+
+            html2pdf().set({
+                margin: 0,
+                filename: filename,
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
+            }).from(el).save();
+        });
+    }
 })();
