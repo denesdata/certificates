@@ -30,7 +30,9 @@
         var participant = typeof cert.participant === 'object'
             ? (cert.participant[lang] || cert.participant.hu) : cert.participant;
         document.getElementById('cert-name').textContent = participant;
-        document.getElementById('cert-course').textContent = cert.course[lang] || cert.course.hu;
+        var courseEl = document.getElementById('cert-course');
+        courseEl.textContent = cert.course[lang] || cert.course.hu;
+        fitCourseTitle(courseEl);
         document.getElementById('cert-location').textContent = cert.location[lang] || cert.location.hu;
         document.getElementById('cert-date').textContent = formatDate(cert.date, lang);
         document.getElementById('cert-issued-date').textContent =
@@ -46,6 +48,15 @@
         document.title = 'székelydata — ' + t('certTitle', lang) + ' — ' + cert.participant;
 
         generateQR();
+    }
+
+    /** Keep one line when it fits; wrap only if the title overflows. */
+    function fitCourseTitle(el) {
+        el.style.whiteSpace = 'nowrap';
+        // Force layout, then wrap only when needed
+        if (el.scrollWidth > el.clientWidth + 1) {
+            el.style.whiteSpace = 'normal';
+        }
     }
 
     function generateQR() {

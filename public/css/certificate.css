@@ -167,7 +167,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 3.5rem 1.2rem;
+    /* Slightly tighter side padding so longer course titles fit */
+    padding: 2rem 2.5rem 1.2rem;
     text-align: center;
 }
 
@@ -257,16 +258,15 @@ body {
 
 .cert-course {
     font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     font-weight: 400;
     font-style: italic;
     color: var(--primary);
     margin: 0.6rem 0 0.8rem;
-    max-width: 92%;
-    line-height: 1.35;
-    white-space: normal;
-    overflow-wrap: break-word;
-    text-wrap: balance;
+    max-width: 100%;
+    line-height: 1.3;
+    /* Prefer one line; wrap only if the title still overflows */
+    white-space: nowrap;
 }
 
 /* ── Certificate Details ────────────────────────── */
@@ -421,6 +421,7 @@ body {
 }
 
 /* ── Print Styles ───────────────────────────────── */
+/* Match on-screen / html2pdf capture: same cert chrome, only page chrome changes */
 
 @media print {
     .no-print,
@@ -428,18 +429,12 @@ body {
         display: none !important;
     }
 
-    * {
-        overflow: visible !important;
-    }
-
-    html {
-        width: 297mm;
-        height: 210mm;
+    @page {
+        size: A4 landscape;
         margin: 0;
-        padding: 0;
-        overflow: hidden;
     }
 
+    html,
     body {
         width: 297mm;
         height: 210mm;
@@ -456,42 +451,24 @@ body {
         width: 297mm;
         height: 210mm;
         min-height: 0;
-        max-height: 210mm;
-        display: block;
-        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
     }
 
     .certificate {
         width: 297mm;
         height: 210mm;
         max-width: none;
-        max-height: 210mm;
-        box-shadow: none;
         aspect-ratio: auto;
         margin: 0;
+        /* html2pdf also flattens without relying on print shadow */
+        box-shadow: none;
         page-break-after: avoid;
+        overflow: hidden;
     }
 
-    .cert-border {
-        inset: 6mm;
-    }
-
-    .cert-inner {
-        padding: 4mm 10mm 3mm;
-    }
-
-    .cert-logo-img {
-        height: 36px;
-    }
-
-    .cert-sig-img {
-        height: 45px;
-    }
-
-    @page {
-        size: A4 landscape;
-        margin: 0;
-    }
+    /* Keep .cert-border, .cert-inner, logo, signature sizes identical to screen */
 }
 
 /* ── Responsive ─────────────────────────────────── */
