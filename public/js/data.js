@@ -60,9 +60,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -90,9 +90,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -120,9 +120,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -150,9 +150,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -180,9 +180,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -210,9 +210,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -240,9 +240,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -270,9 +270,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -300,9 +300,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -330,9 +330,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -360,9 +360,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -390,9 +390,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -420,9 +420,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -450,9 +450,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -480,9 +480,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -510,9 +510,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -540,9 +540,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -570,9 +570,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -600,9 +600,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -630,9 +630,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -660,9 +660,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -690,9 +690,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -720,9 +720,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -750,9 +750,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -780,9 +780,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -810,9 +810,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -840,9 +840,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -870,9 +870,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -900,9 +900,9 @@ const CERTIFICATES = {
         date: '2026-03-27',
         issuedDate: '2026-03-27',
         location: {
-            hu: 'Csíkszereda, Románia',
-            en: 'Miercurea Ciuc, Romania',
-            ro: 'Miercurea Ciuc, România'
+            hu: 'Marosv�s�rhely, Rom�nia',
+            en: 'Targu Mures, Romania',
+            ro: 'T�rgu Mure?, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -930,9 +930,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -960,9 +960,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -990,9 +990,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1020,9 +1020,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1050,9 +1050,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1080,9 +1080,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1110,9 +1110,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1140,9 +1140,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1170,9 +1170,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1200,9 +1200,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1230,9 +1230,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1260,9 +1260,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1290,9 +1290,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1320,9 +1320,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1350,9 +1350,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1380,9 +1380,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1410,9 +1410,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1440,9 +1440,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1470,9 +1470,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1500,9 +1500,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1530,9 +1530,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1560,9 +1560,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1590,9 +1590,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1620,9 +1620,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1650,9 +1650,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1680,9 +1680,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1710,9 +1710,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1740,9 +1740,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1770,9 +1770,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1800,9 +1800,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1830,9 +1830,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1860,9 +1860,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1890,9 +1890,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1920,9 +1920,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1950,9 +1950,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -1980,9 +1980,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2010,9 +2010,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2040,9 +2040,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2070,9 +2070,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2100,9 +2100,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2130,9 +2130,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2160,9 +2160,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2190,9 +2190,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2220,9 +2220,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2250,9 +2250,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2280,9 +2280,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2310,9 +2310,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2340,9 +2340,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2370,9 +2370,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2400,9 +2400,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2430,9 +2430,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2460,9 +2460,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2490,9 +2490,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2520,9 +2520,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2550,9 +2550,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2580,9 +2580,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2610,9 +2610,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2640,9 +2640,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2670,9 +2670,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2700,9 +2700,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2730,9 +2730,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2760,9 +2760,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2790,9 +2790,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
@@ -2820,9 +2820,9 @@ const CERTIFICATES = {
         date: '2026-02-16',
         issuedDate: '2026-02-16',
         location: {
-            hu: 'Marosvásárhely, Románia',
-            en: 'Targu Mures, Romania',
-            ro: 'Târgu Mureș, România'
+            hu: 'Cs�kszereda, Rom�nia',
+            en: 'Miercurea Ciuc, Romania',
+            ro: 'Miercurea Ciuc, Rom�nia'
         },
         instructor: {
             hu: 'Dr. Csala Dénes',
