@@ -70,109 +70,110 @@
         return cert.id + ' — ' + participant + '.pdf';
     }
 
-    /**
-     * html2canvas mis-captures the on-page cert (max-width, shadow, scroll).
-     * Clone into a fixed A4-landscape host at the origin, then render that.
-     */
-    function withExportClone(fn) {
-        var source = document.getElementById('certificate');
-        var host = document.createElement('div');
-        host.setAttribute('data-cert-export', '1');
-        host.style.cssText = [
-            'position:fixed',
-            'left:0',
-            'top:0',
-            'width:297mm',
-            'height:210mm',
-            'margin:0',
-            'padding:0',
-            'overflow:hidden',
-            'background:#fefcf3',
-            'z-index:2147483647',
-            'pointer-events:none'
-        ].join(';');
+    function nextFrame() {
+        return new Promise(function (resolve) {
+            requestAnimationFrame(function () {
+                requestAnimationFrame(resolve);
+            });
+        });
+    }
 
-        var clone = source.cloneNode(true);
-        clone.removeAttribute('id');
-        clone.style.cssText = [
+    /**
+     * Capture the on-page certificate at a fixed A4 landscape CSS size.
+     * Do NOT pass html2canvas windowWidth/windowHeight (= known left-crop bug).
+     * Paint the canvas into a 297×210mm jsPDF page at (0,0).
+     */
+    function buildPdf() {
+        var el = document.getElementById('certificate');
+        var wrap = document.getElementById('certificate-wrapper');
+        var toolbar = document.querySelector('.toolbar');
+        var JsPDF = window.jspdf && window.jspdf.jsPDF;
+
+        if (typeof html2canvas !== 'function' || !JsPDF) {
+            return Promise.reject(new Error('PDF libraries not loaded'));
+        }
+
+        var saved = {
+            el: el.style.cssText,
+            wrap: wrap.style.cssText,
+            toolbar: toolbar ? toolbar.style.cssText : '',
+            x: window.scrollX,
+            y: window.scrollY
+        };
+
+        if (toolbar) toolbar.style.display = 'none';
+        wrap.style.cssText = 'padding:0;margin:0;min-height:0;display:flex;justify-content:center;';
+        el.style.cssText = [
             'width:297mm',
             'height:210mm',
             'max-width:none',
             'max-height:none',
             'margin:0',
-            'padding:0',
             'box-shadow:none',
             'aspect-ratio:auto',
-            'transform:none',
             'position:relative',
-            'left:0',
-            'top:0',
             'overflow:hidden',
             'background:#fefcf3'
         ].join(';');
 
-        host.appendChild(clone);
-        document.body.appendChild(host);
-
-        var prevX = window.scrollX;
-        var prevY = window.scrollY;
         window.scrollTo(0, 0);
 
-        return Promise.resolve()
+        return nextFrame()
             .then(function () {
-                // Let layout/fonts settle one frame
-                return new Promise(function (resolve) {
-                    requestAnimationFrame(function () {
-                        requestAnimationFrame(resolve);
-                    });
+                return html2canvas(el, {
+                    scale: 2,
+                    useCORS: true,
+                    allowTaint: true,
+                    backgroundColor: '#fefcf3',
+                    scrollX: 0,
+                    scrollY: 0,
+                    logging: false
                 });
             })
-            .then(function () {
-                return fn(clone);
+            .then(function (canvas) {
+                var pdf = new JsPDF({
+                    orientation: 'landscape',
+                    unit: 'mm',
+                    format: 'a4',
+                    compress: true
+                });
+                var img = canvas.toDataURL('image/jpeg', 0.98);
+                pdf.addImage(img, 'JPEG', 0, 0, 297, 210);
+                return pdf;
             })
             .finally(function () {
-                if (host.parentNode) host.parentNode.removeChild(host);
-                window.scrollTo(prevX, prevY);
+                el.style.cssText = saved.el;
+                wrap.style.cssText = saved.wrap;
+                if (toolbar) toolbar.style.cssText = saved.toolbar;
+                window.scrollTo(saved.x, saved.y);
             });
     }
 
-    function pdfOptions() {
-        return {
-            margin: 0,
-            filename: pdfFilename(),
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: {
-                scale: 2,
-                useCORS: true,
-                backgroundColor: '#fefcf3',
-                scrollX: 0,
-                scrollY: 0,
-                x: 0,
-                y: 0,
-                logging: false
-            },
-            jsPDF: {
-                unit: 'mm',
-                format: [297, 210],
-                orientation: 'landscape'
-            },
-            pagebreak: { mode: ['avoid-all'] }
-        };
-    }
-
-    function savePdf() {
-        return withExportClone(function (clone) {
-            return html2pdf().set(pdfOptions()).from(clone).save();
+    var saveBtn = document.getElementById('save-pdf-btn');
+    if (saveBtn) {
+        saveBtn.addEventListener('click', function () {
+            saveBtn.disabled = true;
+            buildPdf()
+                .then(function (pdf) {
+                    pdf.save(pdfFilename());
+                })
+                .catch(function (err) {
+                    console.error(err);
+                    alert('PDF export failed. Please try again.');
+                })
+                .finally(function () {
+                    saveBtn.disabled = false;
+                });
         });
     }
 
-    function printPdf() {
-        return withExportClone(function (clone) {
-            return html2pdf()
-                .set(pdfOptions())
-                .from(clone)
-                .outputPdf('bloburl')
-                .then(function (url) {
+    var printBtn = document.getElementById('print-btn');
+    if (printBtn) {
+        printBtn.addEventListener('click', function () {
+            printBtn.disabled = true;
+            buildPdf()
+                .then(function (pdf) {
+                    var url = pdf.output('bloburl');
                     var frame = document.createElement('iframe');
                     frame.style.cssText = 'position:fixed;right:0;bottom:0;width:0;height:0;border:0;';
                     frame.src = url;
@@ -188,25 +189,14 @@
                             }, 1500);
                         }
                     };
+                })
+                .catch(function (err) {
+                    console.error(err);
+                    window.print();
+                })
+                .finally(function () {
+                    printBtn.disabled = false;
                 });
-        });
-    }
-
-    var saveBtn = document.getElementById('save-pdf-btn');
-    if (saveBtn) {
-        saveBtn.addEventListener('click', function () {
-            savePdf().catch(function (err) {
-                console.error(err);
-            });
-        });
-    }
-
-    var printBtn = document.getElementById('print-btn');
-    if (printBtn) {
-        printBtn.addEventListener('click', function () {
-            printPdf().catch(function (err) {
-                console.error(err);
-            });
         });
     }
 })();
