@@ -70,10 +70,74 @@
         return cert.id + ' — ' + participant + '.pdf';
     }
 
-    /** Same renderer for Save PDF and Print so layouts match. */
-    function buildPdfWorker() {
-        var el = document.getElementById('certificate');
-        return html2pdf().set({
+    /**
+     * html2canvas mis-captures the on-page cert (max-width, shadow, scroll).
+     * Clone into a fixed A4-landscape host at the origin, then render that.
+     */
+    function withExportClone(fn) {
+        var source = document.getElementById('certificate');
+        var host = document.createElement('div');
+        host.setAttribute('data-cert-export', '1');
+        host.style.cssText = [
+            'position:fixed',
+            'left:0',
+            'top:0',
+            'width:297mm',
+            'height:210mm',
+            'margin:0',
+            'padding:0',
+            'overflow:hidden',
+            'background:#fefcf3',
+            'z-index:2147483647',
+            'pointer-events:none'
+        ].join(';');
+
+        var clone = source.cloneNode(true);
+        clone.removeAttribute('id');
+        clone.style.cssText = [
+            'width:297mm',
+            'height:210mm',
+            'max-width:none',
+            'max-height:none',
+            'margin:0',
+            'padding:0',
+            'box-shadow:none',
+            'aspect-ratio:auto',
+            'transform:none',
+            'position:relative',
+            'left:0',
+            'top:0',
+            'overflow:hidden',
+            'background:#fefcf3'
+        ].join(';');
+
+        host.appendChild(clone);
+        document.body.appendChild(host);
+
+        var prevX = window.scrollX;
+        var prevY = window.scrollY;
+        window.scrollTo(0, 0);
+
+        return Promise.resolve()
+            .then(function () {
+                // Let layout/fonts settle one frame
+                return new Promise(function (resolve) {
+                    requestAnimationFrame(function () {
+                        requestAnimationFrame(resolve);
+                    });
+                });
+            })
+            .then(function () {
+                return fn(clone);
+            })
+            .finally(function () {
+                if (host.parentNode) host.parentNode.removeChild(host);
+                window.scrollTo(prevX, prevY);
+            });
+    }
+
+    function pdfOptions() {
+        return {
             margin: 0,
             filename: pdfFilename(),
             image: { type: 'jpeg', quality: 0.98 },
@@ -81,27 +145,68 @@
                 scale: 2,
                 useCORS: true,
                 backgroundColor: '#fefcf3',
-                // Capture at the designed A4-landscape CSS size
-                windowWidth: el.scrollWidth,
-                windowHeight: el.scrollHeight
+                scrollX: 0,
+                scrollY: 0,
+                x: 0,
+                y: 0,
+                logging: false
             },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
-        }).from(el);
+            jsPDF: {
+                unit: 'mm',
+                format: [297, 210],
+                orientation: 'landscape'
+            },
+            pagebreak: { mode: ['avoid-all'] }
+        };
+    }
+
+    function savePdf() {
+        return withExportClone(function (clone) {
+            return html2pdf().set(pdfOptions()).from(clone).save();
+        });
+    }
+
+    function printPdf() {
+        return withExportClone(function (clone) {
+            return html2pdf()
+                .set(pdfOptions())
+                .from(clone)
+                .outputPdf('bloburl')
+                .then(function (url) {
+                    var frame = document.createElement('iframe');
+                    frame.style.cssText = 'position:fixed;right:0;bottom:0;width:0;height:0;border:0;';
+                    frame.src = url;
+                    document.body.appendChild(frame);
+                    frame.onload = function () {
+                        try {
+                            frame.contentWindow.focus();
+                            frame.contentWindow.print();
+                        } finally {
+                            setTimeout(function () {
+                                if (frame.parentNode) frame.parentNode.removeChild(frame);
+                                URL.revokeObjectURL(url);
+                            }, 1500);
+                        }
+                    };
+                });
+        });
     }
 
     var saveBtn = document.getElementById('save-pdf-btn');
     if (saveBtn) {
         saveBtn.addEventListener('click', function () {
-            buildPdfWorker().save();
+            savePdf().catch(function (err) {
+                console.error(err);
+            });
         });
     }
 
     var printBtn = document.getElementById('print-btn');
     if (printBtn) {
         printBtn.addEventListener('click', function () {
-            // Browser print uses @media print (full-bleed A4). For a
-            // pixel-identical file, use Mentés PDF-be (html2pdf).
-            window.print();
+            printPdf().catch(function (err) {
+                console.error(err);
+            });
         });
     }
 })();
