@@ -30,9 +30,7 @@
         var participant = typeof cert.participant === 'object'
             ? (cert.participant[lang] || cert.participant.hu) : cert.participant;
         document.getElementById('cert-name').textContent = participant;
-        var courseEl = document.getElementById('cert-course');
-        courseEl.textContent = cert.course[lang] || cert.course.hu;
-        fitCourseTitle(courseEl);
+        document.getElementById('cert-course').textContent = cert.course[lang] || cert.course.hu;
         document.getElementById('cert-location').textContent = cert.location[lang] || cert.location.hu;
         document.getElementById('cert-date').textContent = formatDate(cert.date, lang);
         document.getElementById('cert-issued-date').textContent =
@@ -45,18 +43,9 @@
         if (cert.issuer.cui) companyText += ' (CUI: ' + cert.issuer.cui + ')';
         document.getElementById('cert-company-name').textContent = companyText;
 
-        document.title = 'székelydata — ' + t('certTitle', lang) + ' — ' + cert.participant;
+        document.title = 'székelydata — ' + t('certTitle', lang) + ' — ' + participant;
 
         generateQR();
-    }
-
-    /** Keep one line when it fits; wrap only if the title overflows. */
-    function fitCourseTitle(el) {
-        el.style.whiteSpace = 'nowrap';
-        // Force layout, then wrap only when needed
-        if (el.scrollWidth > el.clientWidth + 1) {
-            el.style.whiteSpace = 'normal';
-        }
     }
 
     function generateQR() {
@@ -75,21 +64,63 @@
         container.innerHTML = qr.createSvgTag(3, 0);
     }
 
+    function pdfFilename() {
+        var participant = typeof cert.participant === 'object'
+            ? (cert.participant[currentLang] || cert.participant.hu) : cert.participant;
+        return cert.id + ' — ' + participant + '.pdf';
+    }
+
+    /** Same renderer for Save PDF and Print so layouts match. */
+    function buildPdfWorker() {
+        var el = document.getElementById('certificate');
+        return html2pdf().set({
+            margin: 0,
+            filename: pdfFilename(),
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: {
+                scale: 2,
+                useCORS: true,
+                backgroundColor: '#fefcf3',
+                // Capture at the designed A4-landscape CSS size
+                windowWidth: el.scrollWidth,
+                windowHeight: el.scrollHeight
+            },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
+        }).from(el);
+    }
+
     var saveBtn = document.getElementById('save-pdf-btn');
     if (saveBtn) {
         saveBtn.addEventListener('click', function () {
-            var el = document.getElementById('certificate');
-            var participant = typeof cert.participant === 'object'
-                ? (cert.participant[currentLang] || cert.participant.hu) : cert.participant;
-            var filename = cert.id + ' — ' + participant + '.pdf';
+            buildPdfWorker().save();
+        });
+    }
 
-            html2pdf().set({
-                margin: 0,
-                filename: filename,
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2, useCORS: true },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
-            }).from(el).save();
+    var printBtn = document.getElementById('print-btn');
+    if (printBtn) {
+        printBtn.addEventListener('click', function () {
+            buildPdfWorker().outputPdf('bloburl').then(function (url) {
+                var frame = document.createElement('iframe');
+                frame.style.position = 'fixed';
+                frame.style.right = '0';
+                frame.style.bottom = '0';
+                frame.style.width = '0';
+                frame.style.height = '0';
+                frame.style.border = '0';
+                frame.src = url;
+                document.body.appendChild(frame);
+                frame.onload = function () {
+                    try {
+                        frame.contentWindow.focus();
+                        frame.contentWindow.print();
+                    } finally {
+                        setTimeout(function () {
+                            document.body.removeChild(frame);
+                            URL.revokeObjectURL(url);
+                        }, 1000);
+                    }
+                };
+            });
         });
     }
 })();
