@@ -257,12 +257,16 @@ body {
 
 .cert-course {
     font-family: 'Playfair Display', serif;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     font-weight: 400;
     font-style: italic;
     color: var(--primary);
     margin: 0.6rem 0 0.8rem;
-    white-space: nowrap;
+    max-width: 92%;
+    line-height: 1.35;
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-wrap: balance;
 }
 
 /* ── Certificate Details ────────────────────────── */
