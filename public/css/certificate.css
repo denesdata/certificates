@@ -430,54 +430,64 @@ body {
 }
 
 /* ── Print Styles ───────────────────────────────── */
-/* Match on-screen / html2pdf capture: same cert chrome, only page chrome changes */
+/* Full-bleed A4 landscape; pin cert to origin so Chrome can't crop left/top */
 
 @media print {
     .no-print,
+    .toolbar,
     .cert-not-found {
         display: none !important;
     }
 
     @page {
         size: A4 landscape;
-        margin: 0;
+        margin: 0 !important;
     }
 
     html,
     body {
-        width: 297mm;
-        height: 210mm;
-        margin: 0;
-        padding: 0;
-        background: white;
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        background: var(--cream) !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
 
     .certificate-wrapper {
-        padding: 0;
-        margin: 0;
-        width: 297mm;
-        height: 210mm;
-        min-height: 0;
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
+        position: fixed !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+        overflow: hidden !important;
+        background: var(--cream) !important;
     }
 
     .certificate {
-        width: 297mm;
-        height: 210mm;
-        max-width: none;
-        aspect-ratio: auto;
-        margin: 0;
-        /* html2pdf also flattens without relying on print shadow */
-        box-shadow: none;
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        max-width: none !important;
+        max-height: none !important;
+        margin: 0 !important;
+        aspect-ratio: auto !important;
+        box-shadow: none !important;
+        overflow: hidden !important;
         page-break-after: avoid;
-        overflow: hidden;
+        page-break-inside: avoid;
+        background: var(--cream) !important;
     }
 
-    /* Keep .cert-border, .cert-inner, logo, signature sizes identical to screen */
+    /* Same inner chrome as screen — no shrink overrides */
 }
 
 /* ── Responsive ─────────────────────────────────── */

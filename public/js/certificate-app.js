@@ -99,28 +99,9 @@
     var printBtn = document.getElementById('print-btn');
     if (printBtn) {
         printBtn.addEventListener('click', function () {
-            buildPdfWorker().outputPdf('bloburl').then(function (url) {
-                var frame = document.createElement('iframe');
-                frame.style.position = 'fixed';
-                frame.style.right = '0';
-                frame.style.bottom = '0';
-                frame.style.width = '0';
-                frame.style.height = '0';
-                frame.style.border = '0';
-                frame.src = url;
-                document.body.appendChild(frame);
-                frame.onload = function () {
-                    try {
-                        frame.contentWindow.focus();
-                        frame.contentWindow.print();
-                    } finally {
-                        setTimeout(function () {
-                            document.body.removeChild(frame);
-                            URL.revokeObjectURL(url);
-                        }, 1000);
-                    }
-                };
-            });
+            // Browser print uses @media print (full-bleed A4). For a
+            // pixel-identical file, use Mentés PDF-be (html2pdf).
+            window.print();
         });
     }
 })();
